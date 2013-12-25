@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+  
+
+  <title>Chapter&nbsp;2.&nbsp;Tutorial - PBC</title>
+  <link rel="stylesheet" href="./Chapter 2. Tutorial - PBC_files/pretty.css" type="text/css">
+  <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+    <div class="toc">
+      <ul>
+<li><a href="">Crypto Notes</a></li>
+
+
+        <li>
+          <span class="chapter"><a href="">1. Elliptic Curves in Cryptography</a></span>
+
+          <ul>
+            <li><span class="section"><a id="ec-af" href="javascript:void(0);">Addition Formulae</a></span></li>
+            <li><span class="section"><a id="ec-ecdlp" href="javascript:void(0);">ECDLP</a></span></li>
+
+        
+          </ul>
+        </li>
+
+      </ul>
+</div>
+<div class="content">
+  <div  id="myDiv" class="chapter" title="Chapter 2. Tutorial">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h2 class="title"><a name="_tutorial"></a>A few notes on applied crypto</h2>
+        </div>
+      </div>
+    </div>
+
+    <p>In this page i will keep track of crypto notes that i have selected thoughout stydying various sources of applied crypto.
+These notes corresponds to practical elliptic curves that are being widely used in protocols such as SSL,TLS,hardware platforms and does not include '$exotic$' curves. The following is a simplification of an elliptic curve equation:
+$$Y^2=X^3+ax+b$$
+The fields that are  being used for elliptic curve cryptography are:
+<ul>
+<li><b>Characteristic p: $\mathbb{F}_p$</li>
+<li>Characteristic 2:  $\mathbb{F}_{2^n}$</li>
+<li></b>$\mathbb{F}_{p^n}$, for small $n$ (used for pairing based cryptography)</li>
+</ul>
+The number of solution for an elliptic curve is given by:
+$E(K)\{points (x,y) \in K^2\}\cup \{\mathcal{O}_E\}$
+
+
+
+</p>
+</body>
+
+<script>
+  $(document).ready(function(){
+    $("#ec-af").click(function(){
+      $("#myDiv").load("ec-af.html", function () {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);
+      });
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#ec-ecdlp").click(function(){
+      $("#myDiv").load("ec-ecdlp.html", function () {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);
+      });
+    });
+  });
+</script>
+</html>

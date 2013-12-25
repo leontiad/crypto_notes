@@ -1,0 +1,20 @@
+
+    <div class="titlepage">
+      <div>
+        <div>
+          <h2 class="title">ECDLP</h2>
+        </div>
+      </div>
+    </div>
+
+    <p>Since elliptic curves are being used in cryptography there should be a presumable 'hard' problem that lives in the finite group K of an elliptic curve E. And this problem is the elliptic curve discrete logarithm problem. Knowing that DLP in a finite field $\mathbb{F}_p$ is as secure as the largest prime number.
+Given $P=(x,y) \in E_K$ and $n$, we compute 
+$$\color{blue}{Q}=\color{red}{n}\color{blue}{P}=\underbrace{(x,y)+(x,y)+(x,y)+ \cdots + (x,y)}_{n}$$
+
+The order $l$ of $P$ is a 'large' prime such that $lP=\mathcal{O}_E$. The DLP is parametrized by the largest prime divisors of the order $P$. So we choose $P$ such that should have a large prime order. Then DLP is to find the number $\color{red}{n}$
+</p>
+
+<p>*Notes: chosing finite fields of this form: $\mathbb{F}_{p^{n*m}}$, that is $p$ to a composite number is susceptible to $\color{blue}{Weil }$ descent attacks. The interesting thing here is that this is not bad when you do a pairing.} </p>
+  
+
+
